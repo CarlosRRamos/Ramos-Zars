@@ -45,13 +45,15 @@ h2 {
     justify-content: center;
     align-items: center;
 }
-.navegador a{
+
+.navegador a {
     text-decoration: none;
     color: #ffffff;
     font-size: xx-large;
     padding-right: 5px;
 }
-a{
+
+a {
     text-decoration: none;
     color: #ffffff;
     font-size: xx-large;
@@ -83,16 +85,16 @@ p {
 }
 
 .imagenConsolas {
-    object-fit: cover;
-    /* Ajusta la imagen manteniendo la relación de aspecto */
-    width: 450px;
-    height: 450px;
+width: 30%;
 }
 
 .imagenConsolaDetalles {
     object-fit: cover;
-    width: 35%;
-    height: 35%;
+    width: 600px;
+}
+
+.ampliado {
+    display: flex;
 }
 
 footer {
