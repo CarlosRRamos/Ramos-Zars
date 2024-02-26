@@ -12,115 +12,90 @@
     --secondary: #917f1d;
 }
 
-body,
-html {
-    height: 100%;
+body {
+    background-color: #ffffff;
 }
 
 header {
+    background-color: #272838;
     display: flex;
     justify-content: space-between;
-    height: 20%;
-    background-color: #07081b;
-    padding: 10px;
     align-items: center;
+    height: 90px;
+    padding: 5px 10%;
 }
 
-main {
-    background-color: #8344cc;
-    height: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+header .logo img {
+    height: 70px;
+    width: auto;
 }
 
-.logo img {
-    height: 300px;
+header nav .navegador {
+    list-style: none;
 }
 
-img {
-    border: 3px solid darkkhaki;
+header nav .navegador li {
+    display: inline-block;
+    padding: 0 20px;
 }
+
+header nav .navegador a {
+    font-size: 30px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/*Hasta aca el header */
 
 .banner img {
     display: flex;
     object-fit: cover;
     width: 100%;
-    height: 100%;
 }
 
-h2 {
+/*intento de banner */
+
+.titulo {
+    background-color: black;
+    color: azure;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+    font-size: 35px;
+    border: 2px solid azure;
+}
+
+/* los h2 estilo */
+.card {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.card img {
+    width: 45%;
+    border-radius: 10px;
+}
+.card div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 55%;
     text-align: center;
 }
-
-.lista {
-    display: flex;
-    background-color: #07081b;
-    color: #ffffff;
-    height: 45px;
-    justify-content: center;
-    align-items: center;
+.card div p {
+    font-size: 25px;
+    color: #333;
 }
-
-.navegador a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: xx-large;
-    padding-right: 5px;
+.card div button {
+    padding: 10px 20px;
+    background-color: #3f2853;
+    border: none;
+    border-radius: 5px;
 }
-
-a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: xx-large;
-}
-
-.cuadrado {
-    border: 3px solid magenta;
-}
-
-article {
-    display: flex;
-    border: 3px solid rgb(224, 248, 11);
-    justify-content: space-between;
-    align-items: center;
-}
-
-button {
-    display: flex;
-    background-color: #07081b;
-    border: 3px solid #490c72;
-    width: 200px;
-    height: 200px;
-    align-items: center;
-    justify-content: center;
-}
-
-p {
-    font-size: xx-large;
-}
-
-.imagenConsolas {
-    width: 30%;
-}
-
-.imagenConsolaDetalles {
-    object-fit: cover;
-    width: 600px;
-}
-
-
-#fondoNosotros {
-    background-image: url(assets/img/fondonosotros.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 90%;
-}
-
-footer {
-    background-color: #07081b;
-    height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.card div button a{
+color: azure;
+text-decoration: none;
 }
