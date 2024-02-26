@@ -15,6 +15,7 @@
 body {
     background-color: #ffffff;
 }
+/*estilos generales de la pagina*/
 
 header {
     background-color: #272838;
@@ -45,7 +46,7 @@ header nav .navegador a {
     text-decoration: none;
 }
 
-/*Hasta aca el header */
+/*diseño del  header */
 
 .banner img {
     display: flex;
@@ -53,29 +54,28 @@ header nav .navegador a {
     width: 100%;
 }
 
-/*intento de banner */
+/*diseño del banner */
 
 .titulo {
-    background-color: black;
+    background-color: #5D536B;
     color: azure;
     padding-top: 4px;
     padding-bottom: 4px;
     text-align: center;
     font-size: 35px;
-    border: 2px solid azure;
 }
 
-/* los h2 estilo */
+/* h2 estilo */
 .card {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     border-radius: 10px;
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .card img {
-    width: 45%;
+    width: 25%;
     border-radius: 10px;
 }
 .card div {
@@ -88,6 +88,8 @@ header nav .navegador a {
 .card div p {
     font-size: 25px;
     color: #333;
+    width: 25%;
+    text-align: start;
 }
 .card div button {
     padding: 10px 20px;
@@ -99,3 +101,67 @@ header nav .navegador a {
 color: azure;
 text-decoration: none;
 }
+/*se realizo las vista de los productos en forma de lista */
+.detalles{
+    display: flex;
+}
+.detalles .imagenDetalles{
+    width: 50%;
+}
+.precio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    margin-left: 20px;
+}
+.precio button{
+    padding: 10px 20px;
+    background-color: #3f2853;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+.precio p{
+    font-size: x-large;
+}
+.precio button a{
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+/*boton imagen y precio*/
+.informacion{
+    padding: 20px;
+    margin: 20px;
+}
+.informacion p{
+    margin-top: 20px;
+}
+
+/*descripciones de productos*/
+footer{
+    background-color: #272838;
+    color: #ffffff;
+}
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
+/*footer simple*/
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    background-image: url(/assets/img/nosotrosimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.nosotros p{
+    padding: 30px;
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
+}
+/*seccion nosotros*/
