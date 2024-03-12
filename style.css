@@ -6,17 +6,14 @@
     box-sizing: border-box;
     font-family: "Roboto", "sans-serif";
 }
-
 :root {
     --primary: red;
     --secondary: #917f1d;
 }
-
 body {
     background-color: #ffffff;
 }
 /*estilos generales de la pagina*/
-
 header {
     background-color: #272838;
     display: flex;
@@ -25,37 +22,29 @@ header {
     height: 90px;
     padding: 5px 10%;
 }
-
 header .logo img {
     height: 70px;
     width: auto;
 }
-
 header nav .navegador {
     list-style: none;
 }
-
 header nav .navegador li {
     display: inline-block;
     padding: 0 20px;
 }
-
 header nav .navegador a {
     font-size: 30px;
     color: aliceblue;
     text-decoration: none;
 }
-
 /*diseño del  header */
-
 .banner img {
     display: flex;
     object-fit: cover;
     width: 100%;
 }
-
 /*diseño del banner */
-
 .titulo {
     background-color: #5D536B;
     color: azure;
@@ -137,7 +126,6 @@ text-decoration: none;
 .informacion p{
     margin-top: 20px;
 }
-
 /*descripciones de productos*/
 footer{
     background-color: #272838;
@@ -156,7 +144,6 @@ footer a{
     background-image: url(/assets/img/nosotrosimg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 .nosotros p{
     padding: 30px;
@@ -165,3 +152,58 @@ footer a{
     text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
 }
 /*seccion nosotros*/
+p input{
+    width: 10%;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+    header .logo img {
+        height: 50px;
+    }
+    header nav .navegador li {
+        padding: 10px 0;
+    }
+    header nav .navegador a {
+        font-size: 20px;
+    }
+    .banner img {
+        width: 100%;
+    }
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card img {
+        width: 100%;
+    }
+    .card div {
+        width: 100%;
+    }
+    .detalles {
+        flex-direction: column;
+    }
+    .detalles .imagenDetalles {
+        width: 100%;
+    }
+    .precio {
+        align-items: center;
+        margin-left: 0;
+    }
+    .nosotros {
+        height: auto;
+    }
+    p input{
+        width: 7%;
+    }
+    .card div p {
+        font-size: 15px;
+    }
+    button{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+/*seccion mobile*/
