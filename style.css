@@ -127,13 +127,33 @@ text-decoration: none;
     margin-top: 20px;
 }
 /*descripciones de productos*/
-footer{
+
+footer {
     background-color: #272838;
-    color: #ffffff;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
-footer a{
+
+footer div h4 {
+    margin: 0;
+    padding: 0;
+}
+
+footer div ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer div ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer a {
+    color: white;
     text-decoration: none;
-    color: #ffffff;
 }
 /*footer simple*/
 .nosotros{
